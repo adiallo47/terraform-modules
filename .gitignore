@@ -1,0 +1,18 @@
+# Local Terraform files
+*.tfstate
+*.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+
+# Directories
+.terraform/
+.terraform.lock.hcl
+.terraform/**/*
+
+# System Files
+.DS_Store
