@@ -6,7 +6,7 @@ variable "region" {
 
 variable "s3bucket" {
     description = "s3bucket"
-    default = "tf-dou-s3bucket1"
+    default = "tf-dou-s3bucket02"
     type = string
 }
 
