@@ -12,7 +12,6 @@ crash.log
 # Directories
 .terraform/
 .terraform.lock.hcl
-.terraform/**/*
 
 # System Files
 .DS_Store
