@@ -6,13 +6,7 @@ variable "region" {
 
 variable "s3bucket" {
     description = "s3bucket"
-    default = "tf-dou-s3bucket"
-    type = string
-}
-
-variable "ami" {
-    description = "EC2 AMI"
-    default = "ami-04b4f1a9cf54c11d0"
+    default = "tf-dou-s3bucket1"
     type = string
 }
 
