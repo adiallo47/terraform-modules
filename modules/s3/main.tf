@@ -52,3 +52,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "s3bucket" {
 output "s3" {
   value = aws_s3_bucket.s3bucket.id    
 }
+
+terraform {
+  backend "s3" {}
+}
