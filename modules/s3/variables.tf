@@ -24,6 +24,6 @@ variable "sse_algorithm" {
 
 variable "acl" {  
     description = "ownership of objects in the bucket"    
-    default = "private"
+    default = null
     type = string
 }
