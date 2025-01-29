@@ -16,7 +16,7 @@ resource "aws_s3_bucket" "s3bucket" {
   bucket = var.s3bucket
 
   tags = {
-    name = var.name
+    name = var.tag
     environment = "dev"
   }
 }

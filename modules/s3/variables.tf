@@ -10,7 +10,7 @@ variable "s3bucket" {
     type = string
 }
 
-variable "name" {
+variable "tag" {
     description = "s3 bucket"
     default = "Terraform practice"
     type = string
