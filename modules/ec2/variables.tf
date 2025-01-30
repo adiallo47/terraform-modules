@@ -16,7 +16,7 @@ variable "ami" {
     type = string
 }
 
-variable "name" {
+variable "tag" {
     description = "EC2 Name"
     default = "Terraform practice"
     type = string

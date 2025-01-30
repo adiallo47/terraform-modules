@@ -17,7 +17,8 @@ resource "aws_instance" "myec2" {
   instance_type = var.myec2
 
   tags = {
-    name = var.name
+    name = var.tag
+    environment = "stage"
   }
 }
 
