@@ -1,12 +1,16 @@
 import boto3
-region = "us-east-1"
+import os
 
-# Initialize EC2 client
+region = os.environ.get("AWS_REGION", "us-east-1")
+
+# initialize EC2 client
 ec2 = boto3.client('ec2' , region_name = region)
 
 def lambda_handler(event, context):
-    instance_ids = ["i-000b3af92d57f8c33", "i-015a1c086635384e5"]  #EC2
-
+    instance_ids = event.get('instance_ids', ["i-000b3af92d57f8c33", "i-015a1c086635384e5"])  #EC2
+    if not instance_ids:
+        print("No instance IDs provided in the event.")
+    
     #stop or start
     action = event.get('action', 'stop')    # Default to stopping, ACTION is a variable that 
                                             # needs to be passed dynamically

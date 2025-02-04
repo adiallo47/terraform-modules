@@ -27,14 +27,6 @@ resource "aws_dynamodb_table" "dynamodb" {
     type = "N" #num
   }
 
-  replica {
-    region_name = "us-east-2"
-  }
-
-  replica {
-    region_name = "us-west-2"
-  }
-
   tags = {
     name = var.tag
     environment = "stage"

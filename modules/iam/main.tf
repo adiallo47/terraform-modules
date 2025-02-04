@@ -2,7 +2,7 @@
 #policy
 #merge role and policy together
 
-resource "aws_iam_role" "stop_start_eEC2_lambdarole" {
+resource "aws_iam_role" "stop_start_EC2_lambdarole" {
   name = var.nameRole
 
   assume_role_policy = jsonencode({
@@ -38,6 +38,6 @@ resource "aws_iam_policy" "stop_start_EC2_lambdapolicy" {
 }
 
 resource "aws_iam_role_policy_attachment" "lambdaEc2_policyattachment" {
-  role       = aws_iam_role.stop_start_eEC2_lambdarole.name
+  role       = aws_iam_role.stop_start_EC2_lambdarole.name
   policy_arn = aws_iam_policy.stop_start_EC2_lambdapolicy.arn
 }
